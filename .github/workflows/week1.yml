@@ -22,10 +22,18 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+          working-directory: week1
+          bundler-cache: true
 
       - name: Test Armstrong
-        working-directory: assignment
+        working-directory: week1
         run: ruby armstrong_test.rb
 
 
