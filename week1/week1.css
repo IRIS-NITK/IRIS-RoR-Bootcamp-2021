@@ -1,0 +1,45 @@
+.aligncenter{
+  text-align: center;
+}
+
+img.profile-pic{
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  border-left: auto;
+  border: 5px solid #555
+}
+
+.header{
+  color: white;
+  font-family: Garamond, Helvetica, sans-serif;
+  font-size: 60px;
+}
+
+#fav_movie{
+  color: blue;
+}
+
+.container{
+  border: 2px solid #555
+}
+
+#list{
+  font-size: 28px;
+}
+
+table, th, td{
+  border: 3px solid black
+}
+
+#city{
+  text-align: center;
+}
+
+footer{
+  display: block;
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
