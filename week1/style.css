@@ -1,0 +1,23 @@
+.header{
+    text-align: center;
+}
+
+p{
+    display: inline-block;
+}
+
+.name{
+    font-size: 30px;
+}
+
+.bottom{
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.bottom{
+    margin-top: 80px;
+}
