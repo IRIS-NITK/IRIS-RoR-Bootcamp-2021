@@ -25,11 +25,11 @@ cd IRIS-RoR-Bootcamp-2021
 > a repository_ is to make a copy of an existing project. Here, we are
 > copy the RoR bootcamp exercises.
 
-- Create and checkout to a new branch `session_<n>_<your_name>` where
-  `n` is the session number.
+- Create and checkout to a new branch `week<n>_<your_name>` where
+  `n` is the week number.
 
 ```bash
-git checkout -b session_1_abhishek_kumar
+git checkout -b week1_abhishek_kumar
 ```
 
 > A [_branch_](https://www.atlassian.com/git/tutorials/using-branches) represents an independent line of development. Thus,
