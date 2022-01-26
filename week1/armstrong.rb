@@ -10,5 +10,10 @@
 # and `false` otherwise.
 
 def armstrong_number(n)
-    raise NotImplementedError # Delete this line and start coding here
+    l = n.digits
+    sum = 0
+    for i in l do
+        sum += i**3
+    end
+    puts sum
 end
