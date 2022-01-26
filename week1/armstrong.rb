@@ -1,5 +1,4 @@
-# An armstrong number is a number such that sum of cubes of its digits
-# is equal to the number itself.
+# An n-digit number that is the sum of the nth powers of its digits is called an n-narcissistic number. It is also known as an Armstrong number.
 #
 # For example,
 # 153 = 1^3 + 5^3 + 3^3
@@ -10,6 +9,7 @@
 # and `false` otherwise.
 
 def armstrong_number(n)
+
     sum = 0
     origional_no = n
 
@@ -39,3 +39,6 @@ end
 puts("Enter number")
 n = gets.chomp.to_i
 armstrong_number(n)
+
+end
+

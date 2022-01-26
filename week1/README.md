@@ -36,6 +36,19 @@ User will be asked to enter a number. This is the only input given by the user.
 > Input: **123**
 > Output: **false**
 
+### Run test locally
+
+```bash
+# First install the required gem
+# Run the command given below inside `week1` directory
+bundle install
+```
+
+```bash
+# Run the tests
+ruby armstrong_test.rb
+```
+
 ### Submission Instructions
 
 * Work on a Git branch called `week1_<your_name>`.
