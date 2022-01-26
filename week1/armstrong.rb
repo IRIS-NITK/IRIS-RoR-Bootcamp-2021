@@ -12,7 +12,7 @@
 def armstrong_number(n)
     sum = 0
     origional_no = n
-    
+
     len = n.to_s.length
 
     if n < 0 
@@ -31,7 +31,9 @@ def armstrong_number(n)
         else
         puts("false")
         end
-    end        
+
+    end 
+
 end
 
 puts("Enter number")
