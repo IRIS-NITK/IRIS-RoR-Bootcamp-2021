@@ -1,0 +1,53 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    margin: 0px;
+}
+
+.HeaderClass{
+    font-size: 40px;
+    padding: 2%;
+    display: flex;
+    color: #FDEBF7;
+    padding-bottom: 0px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.movies{
+    padding: 2%;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 0px;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+    margin:2%;
+}
+
+.Copyright{
+    font-size: 20px;
+    text-align: center;
+}
+
+.city{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    font-size: 30px;
+    align-items: center;
+    color: #FFF2F9;
+}
+
+td{
+    padding: 20px;
+}
