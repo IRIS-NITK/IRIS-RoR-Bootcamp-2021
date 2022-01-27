@@ -7,7 +7,24 @@
 #
 # Your output should be `true` if the number is an Armstrong number
 # and `false` otherwise.
-
+# ==========================================================
+# Author:      Arif Kalluru
+# Title:       IRIS RoR Bootcamp 2021-22 Week 1 Assignment 1
+# ==========================================================
 def armstrong_number(n)
-    raise NotImplementedError # Delete this line and start coding here
+  num = n
+  digits = num.abs.digits.count
+  result = 0
+
+  if num < 0
+    false
+  else
+    until n == 0
+      rem = n%10
+      n = n/10
+      result = result + rem**digits
+    end
+
+    num == result ? true : false
+  end
 end
