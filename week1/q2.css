@@ -1,0 +1,32 @@
+*{
+  font-family : "Times New Roman",Times, serif;
+}
+
+.header{
+  text-align: center;
+  font-size : 2vw;
+}
+.section{
+  text-align : center;
+  font-size: 1.5vw;
+}
+table{
+  border: 1px solid black;
+  font-size : 1.5vw;
+  text-align : center;
+  width : 50%;
+  margin: auto;
+}
+th,td{
+  border: 1px solid black;
+  text-align : center;
+}
+footer{
+  text-align: center;
+  background-color: Black;
+  opacity: 0.3;
+  color : white;
+  position: fixed;
+  bottom : 0;
+  width : 100%;
+}
