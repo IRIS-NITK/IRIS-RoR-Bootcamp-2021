@@ -11,7 +11,7 @@
 
 def armstrong_number(n)
 
-num = n
+num=n
 count =0
 
 temp=num.abs()
