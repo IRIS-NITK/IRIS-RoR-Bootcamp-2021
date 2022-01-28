@@ -36,5 +36,4 @@ def armstrong_number(n)
 
 end
 
-end
 
