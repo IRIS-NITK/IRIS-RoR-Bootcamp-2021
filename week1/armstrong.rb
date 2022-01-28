@@ -33,9 +33,9 @@ def pow(a,b)
       i+=1
     end
   if (number==sum)
-      puts "true"
+      return "true"
   else
-      puts "false"
+      return "false"
   end
   
   end
