@@ -11,7 +11,7 @@
 
 def armstrong_number(n)
 
-num=gets.chomp.to_i
+num = n
 count =0
 
 temp=num.abs()
