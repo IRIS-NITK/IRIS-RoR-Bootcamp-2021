@@ -1,0 +1,36 @@
+body {
+    background-color: rgba(134, 71, 216, 0.376);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.main {
+    width: 500;
+    padding: 10px;
+    padding-left: 50px;
+    border: 5px solid rgba(3, 7, 31, 1);
+    border-radius: 10px;
+}
+
+#passport_photo {
+    margin-bottom: 30px;
+    outline: 5px groove rgba(102, 105, 138, 0.5);
+    outline-width: 10px;
+    outline-style: groove;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: rgba(32, 16, 63, 0.198);
+    display:block;
+    padding: 5px;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+}
