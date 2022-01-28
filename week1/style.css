@@ -1,0 +1,36 @@
+body{
+    margin: 0;padding: 0;
+}
+.table{
+    display: block;
+    border: 2px solid black;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+th{
+    background-color: skyblue;
+}
+th,td{
+    border: 2px double black;
+}
+.header, section,.tableholder{
+    display: flex;
+    justify-content: center;
+}
+.list{
+    list-style: square inside;
+}
+li{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: italic;
+}
+.footer{
+    text-align: center;
+}
+.tabletitle{
+    list-style: none inside;
+    text-decoration: wavy underline;
+    color: rgb(0, 158, 21);
+}
