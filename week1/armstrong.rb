@@ -11,17 +11,17 @@
 
 def armstrong_number(n)
     raise NotImplementedError
-n=gets.chomp.to_i
+num=gets.chomp.to_i
 count =0
 
-temp=n.abs()
+temp=num.abs()
 while temp!=0
   count+=1
   temp/=10
 end
 
 sum =0
-temp1=n.abs()
+temp1=num.abs()
 while temp1!=0
   rem=temp1%10
   temp1/=10
