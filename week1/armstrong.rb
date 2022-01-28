@@ -10,7 +10,7 @@
 # and `false` otherwise.
 
 def armstrong_number(n)
-    raise NotImplementedError
+
 num=gets.chomp.to_i
 count =0
 
