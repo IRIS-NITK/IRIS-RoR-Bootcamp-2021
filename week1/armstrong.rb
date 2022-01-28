@@ -10,28 +10,26 @@
 # and `false` otherwise.
 
 def armstrong_number(n)
-    puts "Enter the number"
-num=gets.chomp.to_i
+    raise NotImplementedError
+n=gets.chomp.to_i
 count =0
 
-temp=num.abs()
+temp=n.abs()
 while temp!=0
   count+=1
   temp/=10
 end
 
 sum =0
-temp1=num.abs()
+temp1=n.abs()
 while temp1!=0
   rem=temp1%10
   temp1/=10
   sum+=rem**count
 end
-t=true
-f=false
-if (sum==num)
-  puts t
+if (sum==n)
+  return true
 else
-  puts f
+  return false
 end
 end
