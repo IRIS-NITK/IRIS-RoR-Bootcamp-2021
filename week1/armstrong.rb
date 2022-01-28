@@ -16,7 +16,7 @@ def armstrong_number(n)
     len = n.to_s.length
 
     if n < 0 
-        puts("false")
+        return false
         
     else    
         
@@ -27,18 +27,14 @@ def armstrong_number(n)
         end
 
         if sum == origional_no
-        puts("true")
+        return true
         else
-        puts("false")
+        return false
         end
 
     end 
 
 end
-
-puts("Enter number")
-n = gets.chomp.to_i
-armstrong_number(n)
 
 end
 
