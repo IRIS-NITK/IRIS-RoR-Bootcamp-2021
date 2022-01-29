@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Basics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        --bg-color: #1f2235;
+        --color-bold: #be4c56;
+    }
+
+    body {
+        color: white;
+        background-color: var(--bg-color);
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    .navbar {
+        color: var(--color-bold);
+        margin: 8px 14px;
+        padding: 6px;
+        font-family: 'Concert One', cursive;
+        font-size: 1.8rem;
+    }
+
+
+    .section-top {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        margin: 6px 14px;
+        padding: 6px 14px;
+    }
+
+    #picture {
+        height: 400px;
+        width: 400px;
+        margin: 6px 0px;
+    }
+
+    .img-div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .connect-link a {
+        color: yellowgreen;
+    }
+
+    .connect-link a:hover {
+        color: #6988d5;
+
+    }
+
+    .table {
+        display: grid;
+        justify-content: center;
+        margin: 6px 14px;
+
+    }
+
+    .section-bottom-movie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #movie-list {
+        list-style: none;
+    }
+
+    footer div {
+        background-color: #4e4c96;
+        text-align: center;
+        margin: 25px 0px;
+    }
+
+    @media screen and (max-width:832px) {
+
+        .section-top {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">Diviz Akkshat</nav>
+    </header>
+    <section class="section-top">
+        <div>
+            <h1>Meet Diviz</h1>
+            <h2>Say hi on: <em class="connect-link"><a
+                        href="https://www.instagram.com/d.akkshat1109/">Instagram</a></em> | <em class="connect-link"><a
+                        href="https://github.com/diviz11">Github</a></em> | <em class="connect-link"><a
+                        href="https://www.linkedin.com/in/diviz-akkshat-a72879229/">LinkedIn</a><em></h2>
+        </div>
+        <div class="img-div">
+            <img id="picture"
+                src="https://cdn.discordapp.com/attachments/572097777891278889/936354249716142080/1643314625911.png"
+                alt="profile picture">
+        </div>
+        <div class="table">
+            <table>
+                <tdata>
+                    <tr>
+                        <td>Age:</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td>Patna</td>
+                    </tr>
+                </tdata>
+            </table>
+        </div>
+    </section>
+    <section class="section-bottom-movie">
+        <div>
+            <h3>Favourite Movies:</h3>
+        </div>
+        <div>
+            <ul id="movie-list">
+                <li>Spiderman: No Way Home</li>
+                <li>Batman: The Dark Knight</li>
+                <li>The Curious Case of Benjamin Button</li>
+                <li>Interstellar</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div>
+            © 2022 Diviz Akkshat
+        </div>
+    </footer>
+</body>
+
+</html>
