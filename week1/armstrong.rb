@@ -15,14 +15,16 @@ def armstrong_number(n)
     if n==0
         return true
     end
-    no_of_digits=math.log(n,10).floor+1
+    no_of_digits=math.log(n,10).floor()+1
     final=0
     temp=n
     while temp>0
         rem=temp%10
+       puts(rem)
         final=final+ rem**no_of_digits
         temp=temp/10
     end
+   puts(final)
     if (final==n)
         return true
     end
