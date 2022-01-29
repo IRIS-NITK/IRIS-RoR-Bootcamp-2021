@@ -9,5 +9,10 @@
 # and `false` otherwise.
 
 def armstrong_number(n)
-    raise NotImplementedError # Delete this line and start coding here
+    x = n.to_s
+    ans = 0
+    x.each_char { |c|
+        ans += (c.to_i)**x.length
+    }
+    return ans
 end
