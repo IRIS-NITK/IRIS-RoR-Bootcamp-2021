@@ -9,5 +9,13 @@
 # and `false` otherwise.
 
 def armstrong_number(n)
-    raise NotImplementedError # Delete this line and start coding here
+    temp = n
+    arm=0
+    while n!=0 do
+        rem=n%10
+        arm=arm+rem*rem*rem
+        n=n/10
+    end
+    
+    return arm==temp
 end
