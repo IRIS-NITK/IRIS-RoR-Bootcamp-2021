@@ -4,31 +4,110 @@
         <title>Overview to Web</title>
         <link rel = "icon" href = "https://pic.onlinewebfonts.com/svg/img_470621.png"  type = "image/x-icon">
         <meta charset="UTF-8">
+        <style>
+            body{
+                margin:0em;
+                text-align:center;
+            }
+            table {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              width: 30%;
+              margin-left: 35%;
+              padding: 10px;
+            }
+
+
+            h2, h3, #fav-movies{
+                text-align:center;
+            }
+            
+            td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+              text-align:center;
+            }
+
+
+            tr:nth-child(even):hover{
+              background-color: white;
+            }
+
+            tr:nth-child(even) {
+              background-color: #dddddd;
+            }
+             
+            a{
+              text-decoration: none;
+            }
+
+
+            ul > li{
+                font-weight:bold;
+            }
+
+            hr{
+                margin: 0px 16px;
+            }
+
+            h3:hover,h1:hover{
+                color : grey;
+            }
+
+            .content,h4,h5{
+                padding-left:1em;
+                padding-right:1em;
+            }
+
+            img{
+                height:200px;
+                width:170px;
+            }
+        </style>
     </head>
     <body>
-    <header id="top-heading">
+        <header id="top-heading">
             <br>
-            <h1>Profile Page</h1>
             <br>
-            <h4> Name : Mohammmed Ayman Nawaz</h4>
+            <img src="Pic.jpg" alt="Pic">
             <br>
-            <img src="Pic.jpg" alt="Display Picture" style="width:200px;height;100px">
-    </header>
+            <h3>Name : Mohammed Ayman Nawaz</h3>
+        </header>
+        <hr>
+        <br>
+        <div id="table-of-contents">
+            <table>
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td >Ayman</td> 
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>19</td> 
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>Bangalore</td> 
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <br>
+        <hr>
+        <section id="fav-movies">
+            <h4>Favourite movies : CODA 2021, The Father, A promising young woman</h4>
+        </section>
+        <hr>
 
-    <section>
-        <h4>Favourites movies :</h4>
-        <ol>
-            <li>Into the woods</li>
-            <li>Pride And Prejudice</li>
-            <li>CODA 2021</li>
-        </ol>
-    </section>
-      
-    <footer>
+     <footer  style="display:flex;justify-content:space-around;">
          <br>
          <h5>Copyright &copy; 2022 E-Corp. All Rights Reserved. 
          </h5>
-    </footer>
+         <br>
+         <br>
+     </footer>
 
     </body>
 
