@@ -9,7 +9,7 @@
 # and `false` otherwise.
 
 def armstrong_number(n)
-  len=n.length
+  len=n.to_s.length
   n=n.to_i
   num=n
   sum=0
@@ -19,11 +19,9 @@ def armstrong_number(n)
     n=n/10
   end
   if sum==num
-    print 'true'
+    return true
   else 
-    print 'false'
+    return false
   end     
 end
-print "Enter the number: "
-inp=gets.chomp
-armstrong_number(inp)
+
