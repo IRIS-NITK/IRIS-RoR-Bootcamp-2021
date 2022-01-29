@@ -9,5 +9,21 @@
 # and `false` otherwise.
 
 def armstrong_number(n)
-    raise NotImplementedError # Delete this line and start coding here
+  len=n.length
+  n=n.to_i
+  num=n
+  sum=0
+  while n!=0
+    num1=n%10
+    sum+=num1**len
+    n=n/10
+  end
+  if sum==num
+    print 'true'
+  else 
+    print 'false'
+  end     
 end
+print "Enter the number: "
+inp=gets.chomp
+armstrong_number(inp)
