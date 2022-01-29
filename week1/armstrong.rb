@@ -11,9 +11,18 @@
 def armstrong_number(n)
     temp = n
     arm=0
-    while n!=0 do
+    noDigits=0
+
+    while n>0 do
+        noDigits=noDigits+1
+        n=n/10
+    end
+
+    n=temp
+
+    while n>0 do
         rem=n%10
-        arm=arm+rem*rem*rem
+        arm=arm+rem**noDigits
         n=n/10
     end
     
