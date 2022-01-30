@@ -9,6 +9,10 @@
 # and `false` otherwise.
 
 def armstrong_number(n)
+    if(x < 0)
+        return false
+    end
+    
     x = n.to_s
     ans = 0
     x.each_char { |c|
