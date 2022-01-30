@@ -14,5 +14,8 @@ def armstrong_number(n)
     x.each_char { |c|
         ans += (c.to_i)**x.length
     }
+    if(ans == x)
+        return true
+    end
     return ans
 end
