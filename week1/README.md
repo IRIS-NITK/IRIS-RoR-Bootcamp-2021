@@ -1,7 +1,7 @@
 # Assignments - Week 1
 
 * Fork this repository and use the `week1_<your_name>` branch for your work.
-* Once you have completed the assignment, submit a Pull Request with your work.
+* Once you have completed the assignment, submit a Pull Request with your work to the branch `week1_assignment` **(not `main`)**.
 * Your Pull Request will be graded by the automated tests.
 * Status of your grading will be indicated using GitHub tags on your _PR_.
 
