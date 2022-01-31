@@ -9,7 +9,7 @@
 # and `false` otherwise.
 
 def armstrong_number(n)
-    if(x < 0)
+    if(n < 0)
         return false
     end
     
