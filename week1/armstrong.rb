@@ -9,5 +9,26 @@
 # and `false` otherwise.
 
 def armstrong_number(n)
-    raise NotImplementedError # Delete this line and start coding here
+    num = n
+    temp = num
+    digits = 0
+    sum = 0
+
+    while (temp>0)
+	    digits+=1
+	    temp=temp/10
+    end
+
+    temp = num
+
+    while (temp > 0)
+        sum += (temp%10)**digits
+        temp = temp/10
+    end
+
+    if sum == num
+        return true
+    else
+        return false
+    end
 end
