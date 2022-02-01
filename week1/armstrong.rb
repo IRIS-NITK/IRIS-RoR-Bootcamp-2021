@@ -15,5 +15,10 @@ def armstrong_number(n)
     for i in l do
         sum += i**3
     end
-    puts sum
+    
+    if sum == n
+        return true
+        
+    else
+        return false
 end
