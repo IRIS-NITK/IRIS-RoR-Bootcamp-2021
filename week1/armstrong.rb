@@ -9,18 +9,25 @@
 # and `false` otherwise.
 
 def armstrong_number(n)
-
-    l = n.digits
-    sum = 0
-    for i in l do
-        sum += i**3
-    end
     
-    if sum == n
-        return true
+    if n < 0
+        return false
         
     else
-        return false
+
+        l = n.digits
+        sum = 0
+        for i in l do
+            sum += i**3
+        end
+
+        if sum == n
+            return true
+
+        else
+            return false
+
+        end
         
     end
 end
