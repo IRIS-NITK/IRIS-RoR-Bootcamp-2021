@@ -18,7 +18,7 @@ def armstrong_number(n)
         l = n.digits
         sum = 0
         for i in l do
-            sum += i**3
+            sum += i**l.length()
         end
 
         if sum == n
