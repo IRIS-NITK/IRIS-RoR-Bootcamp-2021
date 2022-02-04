@@ -30,6 +30,10 @@ jobs:
           ruby-version: 2.7
           working-directory: week3/about_me_app
           bundler-cache: true
+      
+      - name: Run bundle install
+        working-directory: week3/about_me_app
+        run: bundle install
 
       - name: Rails Test
         working-directory: week3/about_me_app

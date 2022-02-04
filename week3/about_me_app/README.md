@@ -4,7 +4,7 @@ Hello! You'll start building a proper Rails app in this week's workshop. The bas
 
 ## Tasks
 
-- Create four routes - `/about`, `/about_form`, `/about_json`, and a root route.
+- Create four routes - `/about_page`, `/about_form`, `/about_json`, and a root route.
 - Create a AboutPageController to handle all the routes.
 - Create appropriate views.
     - The root URL should display a page with a link to the form page.
@@ -24,3 +24,10 @@ Your assignment will be judged by GitHub Actions. For the test to run, you'll ne
 - The routes should be `about_page`, `about_form` and `about_json`.
 - The controller should be `AboutPageController`, and the file name should be `about_page_controller.rb`.
 - There should be a partial called `_form.html.erb` in the `app/views/about_page` directory.
+
+### Instructions for `about_json`
+The `about_json` route has some extra requirements. It should take an extra parameter as a query string parameter called `message`, which can be any string. This string should be then returned in the JSON output that you display/render.
+
+If I try to access this route as a normal HTML page, I should be re-routed to the root page.
+If there is no `message` parameter, you should return a JSON response with a status of `400` and a message of `'No message specified'`.
+If the URL is being accessed in any other format, you should return a JSON response with a status of `415` and a message of `'Unsupported Media Type'`.
