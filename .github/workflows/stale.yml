@@ -1,0 +1,19 @@
+name: 'Automatically close approved PRs'
+on:
+  schedule:
+    - cron: '30 1 * * *'
+  workflow_dispatch:
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v4
+        with:
+          stale-pr-message: 'Good job, since changes have been approved, we will shortly be closing this pull request'
+          close-pr-message: 'Good job, closing pull request since changes have been approved'
+          stale-pr-label: 'closed'
+          only-pr-labels: 'Approved,Week 1'
+          any-of-pr-labels: 'Approved,Week 1'
+          days-before-pr-stale: 1
+          days-before-pr-close: 1
