@@ -1,0 +1,36 @@
+<style>
+    .field{
+        width:50vw;
+        margin: 5px;
+    }
+    .container{
+        display: flex;
+        margin:auto;
+        justify-content:center;
+        height: 100vh;
+        align-items:center;
+        flex-direction:column;
+    }
+    .submit{
+        display:flex;
+        justify-content:center;
+    }
+</style>
+<%if params[:notice]%>
+    <div class="alert alert-danger"><%= params[:notice] %></div>
+<% end %>
+<div class="container">
+<h1>Please fill your details</h1>
+<%= bootstrap_form_with url: "/about_page", method: :post do |form|%>
+<div class="field">
+<%=form.text_field :name %>
+</div>
+<div class="field">
+<%=form.text_field :email%>
+</div>
+<div class="submit">
+<%=form.submit "See your About Page" %>
+</div>
+</div>
+<% end %>
+</div>
