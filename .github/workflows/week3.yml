@@ -37,7 +37,7 @@ jobs:
 
       - name: Install webpack
         working-directory: week3/about_me_app
-        run: rails webpacker:install
+        run: bundle exec rails webpacker:install
 
       - name: Rails Test
         working-directory: week3/about_me_app
