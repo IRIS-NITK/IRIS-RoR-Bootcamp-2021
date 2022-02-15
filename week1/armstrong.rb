@@ -28,6 +28,3 @@ def armstrong_number(n)
     
 end
 
-puts "enter the number "
-n= gets.chomp.to_i
-puts(armstrong_number(n)) 
