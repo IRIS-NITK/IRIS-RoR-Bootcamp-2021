@@ -11,6 +11,7 @@
 
 def armstrong_number(n)
     num=n
+
     lst=[]
     while n!=0
         lst.push(n%10)
@@ -19,12 +20,15 @@ def armstrong_number(n)
     l=lst.length
     tot=0
     for i in 0...l do
+        
         tot=tot+lst.at(i)**l
     end
-    if num==tot
+    if num==tot 
+        print("#{num} is amstrong number\n")
         return true
-    else return false    
+    else 
+        print("#{num} not amstrong number\n")
+        return false    
     end    
     
 end
-
