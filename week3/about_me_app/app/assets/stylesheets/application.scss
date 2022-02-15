@@ -1,3 +1,58 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
 @import "rails_bootstrap_forms";
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  background-color: #FAFAFA;
+  color: #505050;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: #101010;
+}
+
+a:link {
+  color: #505050;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #B199FF;
+}
+
+a:hover {
+  color: #7EAFFC;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #FC7E7E;
+}
+
+a:visited:hover {
+  color: #FCAF7E;
+}
+
+a:visited:active {
+  color: #FC7E7E;
+}
+
+footer {
+  position: absolute;
+  width: 80%;
+  bottom: 0;
+}
+
+.hero-img {
+  border-radius: 50%;
+}

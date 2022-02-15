@@ -1,0 +1,5 @@
+<%= bootstrap_form_with url: about_page_path, layout: :horizontal, method: :post do |f| %>
+  <%= f.text_field :name %>
+  <%= f.email_field :email %>
+  <%= f.submit "Submit" %>
+<% end %>

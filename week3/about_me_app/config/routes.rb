@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root "about_page#index"
 
+  get "/about_form", to: "about_page#form"
+  post "/about_page", to: "about_page#page"
+  get "/about_page", to: "about_page#index"
+  get "/about_json", to: "about_page#json"
 end
