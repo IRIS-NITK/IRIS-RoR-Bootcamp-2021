@@ -4,15 +4,6 @@ class AboutPageController < ApplicationController
   end
   def about_json
     respond_to do |format|
-      # if request.format !=:json &&request.format!=:html
-      #   render plain:"Invalid Request Format",:status =>400
-      # end
-      # if params[:format]!='json'&&params[:format]!='html'
-      #   render plain:"Invalid Request Format",:status =>400
-      # end
-      # if !format.html && !format.json
-      #   render plain:"Invalid Request Format",:status =>400
-      # end
       format.html {redirect_to "/"}
       format.json {
         message = params[:message]
@@ -22,9 +13,6 @@ class AboutPageController < ApplicationController
           render :json => {:response => message },:status => 200
         end
         }
-        # if params[:format].nil?
-        #   render plain:"Invalid Request Format",:status =>400
-        # end
     end
   end
   def about_page
