@@ -6,36 +6,36 @@ class AboutPageControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "get about page" do 
-    post about_page_url, params: {email: "test@abc.xyz", name: "Jane Doe"}
+  test "get about page" do
+    post "/about_page", params: {email: "test@abc.xyz", name: "Jane Doe"}
     assert_response :success
   end
 
   test "get about form" do
-    get about_form_url
+    get "/about_form"
     assert_response :success
   end
 
   test "get about json as html" do
-    get about_json_url, params: {message: "What is up my man"}
+    get "/about_json", params: {message: "What is up my man"}
     assert_response :redirect
     assert_redirected_to root_url
   end
 
   test "get about json as json" do
-    get about_json_url, params: {message: "What is up my man"}, as: :json
+    get "/about_json", params: {message: "What is up my man"}, as: :json
     assert_response :success
     body = JSON.parse(response.body)
     assert body["message"] == "What is up my man"
   end
 
   test "get about json as json without params" do
-    get about_json_url, as: :json
+    get "/about_json", as: :json
     assert_response 400 # Bad Request
   end
 
   test "get about json as xml without params" do
-    get about_json_url, as: :xml
+    get "/about_json", as: :xml
     assert_response 400 # Bad Request
   end
 

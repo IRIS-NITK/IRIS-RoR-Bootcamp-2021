@@ -1,0 +1,5 @@
+<%= bootstrap_form_with( local: true,url: ap_path, method: :post, layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10") do |f| %>
+  <%= f.text_field :name, control_col: "col-sm-3" %>
+  <%= f.email_field :email, control_col: "col-sm-3" %>
+  <%= f.submit "Submit", class: "btn btn-primary" %>
+<% end %>
