@@ -26,7 +26,7 @@ Before you begin, make sure you're in the right directory ([`IRIS-RoR-Bootcamp-2
         - If the request format is **not** JSON or HTML, respond with the status "Bad Request", and plain text - `"Invalid Request Format"`.
         - However, if the request is valid (format JSON and `params[:message]` exists), respond with the message and status 200 (OK). For example:
         ```js
-        // GET /about_json?message="Hello World!"
+        // GET /about_json.json?message="Hello World!"
         response = { "message": "Hello World!" }
         ```
 
