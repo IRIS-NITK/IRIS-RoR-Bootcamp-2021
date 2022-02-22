@@ -19,7 +19,7 @@ class AboutPageController < ApplicationController
 
     def about_json
         respond_to do |format|
-            format.html { redirect to root_path }
+            format.html { redirect_to root_path }
             format.json { render json: {message: params[:message]}, status: :ok }
             format.all { render plain: "Invalid Request Format", status: :bad_request }
         end
