@@ -11,7 +11,7 @@ This week's task is to create a library management system, described as follows 
 - Every Author's phone number must be valid (i.e, it should be of 10 digits length)
 - The Author model must have a ```full_name``` instance method, that gives the full name of the author
 - The Book model must have a ```citation_info``` instance method that cites the 'title', 'authors', and 'info' of the book in a sentence
-- The Publication model must have an ```all_books``` method that lists all the books in the database
+- The Publication model must have an ```all_books``` method that lists all the books that share a particular publication
 
 To solve the above tasks, follow these steps below:
 1. Design the schema for above scenario.
