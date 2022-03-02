@@ -40,7 +40,7 @@ Your assignment will be judged through Github Actions, and so your app will have
 You can ensure that your rails app passes all tests, by going to the ```root``` directory of your app, and then running the following command
 
 ```bash
-bundle exec rspec
+rspec
 ```
 ## Doubts
 Feel free to ask doubts on the [#doubts](https://teams.microsoft.com/l/channel/19%3a6e5ce5031c594c34927026726a750f12%40thread.tacv2/%255BRuby%2520on%2520Rails%255D%2520Doubts?groupId=ebcdbf1c-6b25-48f4-9dfc-9f5e3666cc00&tenantId=36e917dc-1abe-43f4-b189-f92196a6b4ad) channel in Teams
