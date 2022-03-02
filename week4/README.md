@@ -33,13 +33,14 @@ Your assignment will be judged through Github Actions, and so your app will have
   - The ```/publications``` route must render a list of all the publications and the count of books that are published under this publication
   - The ```/publications/:id``` route must show citation information for all the books of the publication
 - Controllers must have fixed names. The names of the required controllers can be inferred from the tests in the test directory
+- Note that you can create database records through the console, and there is no need to submit them through a form view. This assignment is only to test models
 - After completing the task, create a Pull Request to the ```week4_assignment``` branch
 
 ## Running Tests Locally
 You can ensure that your rails app passes all tests, by going to the ```root``` directory of your app, and then running the following command
 
 ```bash
-rails test
+bundle exec rspec
 ```
 ## Doubts
 Feel free to ask doubts on the [#doubts](https://teams.microsoft.com/l/channel/19%3a6e5ce5031c594c34927026726a750f12%40thread.tacv2/%255BRuby%2520on%2520Rails%255D%2520Doubts?groupId=ebcdbf1c-6b25-48f4-9dfc-9f5e3666cc00&tenantId=36e917dc-1abe-43f4-b189-f92196a6b4ad) channel in Teams
