@@ -35,7 +35,6 @@ RSpec.describe Author, type: :model do
     expect(subject.full_name).to eq full_name
   end
 
-
   it "should have only numeric characters" do
     expect(/[0-9]{10}/.match?(subject.phone)).to eq true
   end
@@ -46,6 +45,5 @@ RSpec.describe Author, type: :model do
   describe "Associations" do
     it { should have_many(:books).through(:author_books) }
   end
-
 
 end
